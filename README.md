@@ -13,7 +13,7 @@ const (
   ```go
 )
 var (
-  
+  //
 )
 
 func main() {
@@ -43,8 +43,8 @@ func main() {
   }
   
   defer func child() {
-    returns := after parent
-    return
+    returns := "after parent"
+    return  //=> returns  --implicitly
   }
   
   type Vertex struct {
