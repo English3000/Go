@@ -1,0 +1,6 @@
+<h1>Editing {{.Title}}</h1>
+<form action="/save/{{.Title}}" method="POST">
+  <textarea name="body">{{printf "%s" .Body}}</textarea><br>
+  <!-- use `printf` to convert `.Body` from bytes to string -->
+  <input type="submit" value="Save">
+</form>
